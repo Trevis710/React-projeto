@@ -1,7 +1,14 @@
-function Header(){
+type Props = {
+    title: string;
+}
+
+
+function Header(props: Props) {
     return(
         <>
-            <p>Apenas um teste de React</p>
+            {
+                props.title
+            }
         </>
     )
 }
